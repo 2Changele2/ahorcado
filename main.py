@@ -65,6 +65,7 @@ def main():
             correct_letters_guessed.add(guess)
         else:
             incorrect_letters_guessed.add(guess)
+            num_guesses += 1
 
         word_string = generate_word_string(WORD, correct_letters_guessed)
 
