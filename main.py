@@ -1,6 +1,6 @@
 import random
 import re
-from hangmanpics import HANGMANPICS 
+from hangmanpics import HANGMANPICS, SAVED
 
 MAX_GUESS = 6
 
@@ -17,11 +17,13 @@ def remove_tilts(old):
 
 
 def pick_random_word():
-    words = [
-        'pelota',
-        'chancho',
-        'diccionario'
-    ]
+    # words = [
+    #     'pelota',
+    #     'chancho',
+    #     'diccionario'
+    # ]
+    with open('palabras.txt', 'r') as d:
+        words = d.read().split()   
 
     index = random.randint(0, len(words) - 1)
 
