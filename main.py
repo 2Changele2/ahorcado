@@ -30,7 +30,7 @@ def pick_random_word():
 
 
 def ask_user_for_next_letter():
-    letter = input("Guess your letter: ")
+    letter = input("Adivina la letra: ")
     return letter.strip().upper()
 
 
@@ -52,7 +52,7 @@ def main():
     incorrect_letters_guessed = set()
     num_guesses = 0
 
-    print("Bienvenid@ al jeugo del ahorcado!")
+    print("Bienvenid@ al juego del ahorcado!")
     while (len(letters_to_guess) > 0) and num_guesses < MAX_GUESS:
         guess = ask_user_for_next_letter()
 
