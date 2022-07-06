@@ -1,5 +1,6 @@
 import random
 import re
+from hangmanpics import HANGMANPICS 
 
 MAX_GUESS = 6
 
@@ -66,6 +67,7 @@ def main():
         else:
             incorrect_letters_guessed.add(guess)
             num_guesses += 1
+            print(HANGMANPICS[num_guesses])
 
         word_string = generate_word_string(WORD, correct_letters_guessed)
 
