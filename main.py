@@ -17,13 +17,9 @@ def remove_tilts(old):
 
 
 def pick_random_word():
-    # words = [
-    #     'pelota',
-    #     'chancho',
-    #     'diccionario'
-    # ]
+    words = []
     with open('palabras.txt', 'r') as d:
-        words = d.read().split()   
+        words = d.read().split()
 
     index = random.randint(0, len(words) - 1)
 
