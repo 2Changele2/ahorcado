@@ -80,6 +80,7 @@ def main():
     # tell the user they have won or lost
     if num_guesses < MAX_GUESS:
         print("Felicidades, has acertado correctamente la palabra: {}".format(WORD))
+        print(SAVED)
     else:
         print("Lo Siento!, la palabra que buscanas era: {}".format(WORD))
 
